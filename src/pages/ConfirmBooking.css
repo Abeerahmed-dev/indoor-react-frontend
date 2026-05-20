@@ -1,0 +1,320 @@
+.cb-wrapper {
+  background: var(--bg-dark);
+  min-height: calc(100vh - 73px);
+  color: var(--text-primary);
+  padding: 40px 0;
+  font-family: var(--font-sans);
+}
+
+.cb-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.cb-back-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid var(--border-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--gold-primary);
+  transition: all 0.2s;
+  margin-right: 16px;
+}
+
+.cb-back-btn:hover {
+  background: var(--gold-primary);
+  color: #111;
+}
+
+.cb-header-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--gold-light);
+}
+
+.cb-card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Venue Row */
+.cb-venue-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cb-venue-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.cb-venue-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cb-venue-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.cb-venue-name {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.cb-venue-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Booking Details */
+.cb-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--gold-light);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cb-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.cb-detail-row:last-of-type {
+  border-bottom: none;
+}
+
+.cb-detail-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.cb-detail-right {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Expanded Slots */
+.cb-slots-expanded {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.cb-slot-date-group {
+  margin-bottom: 12px;
+}
+
+.cb-slot-date-group:last-child {
+  margin-bottom: 0;
+}
+
+.cb-slot-date-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.cb-slot-chip {
+  display: inline-block;
+  background: var(--gold-gradient);
+  color: #111;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+/* Payment Summary */
+.cb-pay-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.cb-pay-value {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.cb-pay-total {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border-gold);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cb-pay-advance {
+  margin-top: 12px;
+  padding: 16px;
+  background: rgba(212, 175, 55, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  align-items: center;
+}
+
+.cb-pay-light {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-left: 6px;
+}
+
+.cb-pay-highlight {
+  font-size: 1.2rem;
+  color: var(--gold-primary);
+}
+
+/* Opponent Toggle */
+.cb-toggle-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+}
+
+.cb-toggle-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.cb-toggle-switch {
+  width: 50px;
+  height: 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.cb-toggle-switch.active {
+  background: var(--gold-primary);
+}
+
+.cb-toggle-knob {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.cb-toggle-switch.active .cb-toggle-knob {
+  transform: translateX(22px);
+}
+
+/* Note & MSG */
+.cb-cancel-note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cb-msg {
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.cb-msg.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.cb-msg.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* CTA */
+.cb-cta-btn {
+  width: 100%;
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--gold-gradient);
+  border: none;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+}
+
+.cb-cta-btn:hover:not(:disabled) {
+  background: var(--gold-gradient-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(212, 175, 55, 0.3);
+}
+
+.cb-cta-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

@@ -1,0 +1,297 @@
+.pr-wrapper {
+  background: var(--bg-dark);
+  min-height: calc(100vh - 73px);
+  color: var(--text-primary);
+  padding: 40px 0;
+  font-family: var(--font-sans);
+}
+
+.pr-card {
+  background: var(--bg-card);
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.pr-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.pr-back-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid var(--border-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--gold-primary);
+  transition: all 0.2s;
+}
+
+.pr-back-btn:hover {
+  background: var(--gold-primary);
+  color: #111;
+}
+
+.pr-header-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.pr-intro {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.pr-intro-heading {
+  font-size: 1.1rem;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.pr-intro-sub {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.pr-intro-divider {
+  border: none;
+  border-top: 1px dashed var(--border-gold);
+  margin-top: 24px;
+  opacity: 0.5;
+}
+
+.pr-field {
+  margin-bottom: 24px;
+}
+
+.pr-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Sport Grid */
+.pr-sport-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.pr-sport-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pr-sport-card:hover {
+  border-color: var(--gold-primary);
+}
+
+.pr-sport-card.active {
+  background: var(--gold-gradient);
+  color: #111;
+  border-color: transparent;
+}
+
+.pr-sport-icon {
+  font-size: 1.8rem;
+}
+
+.pr-sport-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pr-sport-card.active .pr-sport-name {
+  color: #111;
+}
+
+/* Dropdowns & Inputs */
+.pr-dropdown-wrapper {
+  position: relative;
+}
+
+.pr-dropdown-btn {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-primary);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+
+.pr-dropdown-btn:hover {
+  border-color: var(--gold-primary);
+}
+
+.pr-dropdown-placeholder {
+  color: var(--text-secondary);
+}
+
+.pr-dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  margin-top: 8px;
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.pr-dropdown-item {
+  padding: 16px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  color: var(--text-primary);
+  transition: all 0.2s;
+}
+
+.pr-dropdown-item:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.pr-dropdown-item.active {
+  background: var(--gold-primary);
+  color: #111;
+}
+
+.pr-input-full,
+.pr-textarea {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.pr-input-full:focus,
+.pr-textarea:focus {
+  outline: none;
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+/* Checkbox */
+.pr-urgent-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.pr-checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--gold-primary);
+  cursor: pointer;
+}
+
+.pr-urgent-label {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Submit */
+.pr-submit-btn {
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  background: var(--gold-gradient);
+  border: none;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 24px;
+}
+
+.pr-submit-btn:hover:not(:disabled) {
+  background: var(--gold-gradient-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.pr-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Msg */
+.pr-msg {
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+.pr-msg.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.pr-msg.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.pr-no-bookings-msg {
+  padding: 16px;
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .pr-sport-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

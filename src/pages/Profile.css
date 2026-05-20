@@ -1,0 +1,345 @@
+.pf-wrapper {
+  background: var(--bg-dark);
+  min-height: calc(100vh - 73px);
+  color: var(--text-primary);
+  padding: 40px 0;
+  font-family: var(--font-sans);
+}
+
+.pf-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.pf-back-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid var(--border-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--gold-primary);
+  transition: all 0.2s;
+  margin-right: 16px;
+}
+
+.pf-back-btn:hover {
+  background: var(--gold-primary);
+  color: #111;
+}
+
+.pf-header-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.pf-card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  border: 1px solid var(--border-subtle);
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* User Card */
+.pf-user-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pf-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.pf-user-info {
+  flex: 1;
+}
+
+.pf-user-name {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 4px;
+}
+
+.pf-user-email {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.pf-logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.pf-logout-btn:hover {
+  background: #ef4444;
+  color: #fff;
+}
+
+/* Admin Card */
+.pf-admin-card {
+  width: 100%;
+  background: linear-gradient(135deg, #1a1a2e, #2d2d4a);
+  border: 1px solid var(--border-gold);
+  border-radius: 20px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 32px;
+  text-align: left;
+  transition: all 0.3s;
+}
+
+.pf-admin-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+}
+
+.pf-admin-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pf-admin-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.pf-admin-desc {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Section Header */
+.pf-section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.pf-section-header h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.pf-badge {
+  background: rgba(212, 175, 55, 0.2);
+  color: var(--gold-primary);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1px solid var(--border-gold);
+}
+
+/* Bookings */
+.pf-loading {
+  text-align: center;
+  padding: 40px;
+  color: var(--gold-primary);
+  font-size: 1.1rem;
+}
+
+.pf-empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--bg-card);
+  border: 1px dashed var(--border-gold);
+  border-radius: 20px;
+}
+
+.pf-empty p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 16px 0 24px;
+}
+
+.pf-explore-btn {
+  padding: 14px 28px;
+  background: var(--gold-gradient);
+  color: #111;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pf-explore-btn:hover {
+  background: var(--gold-gradient-hover);
+  transform: translateY(-2px);
+}
+
+.pf-bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pf-booking-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pf-booking-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pf-booking-name {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 4px;
+}
+
+.pf-booking-sport {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pf-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pf-status.confirmed {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.pf-status.pending {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.pf-status.cancelled {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.pf-booking-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+}
+
+.pf-booking-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.pf-booking-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  text-align: right;
+}
+
+.pf-cancel-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  color: #ef4444;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pf-cancel-btn:hover:not(:disabled) {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.pf-cancel-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pf-no-cancel {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .pf-user-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .pf-logout-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .pf-booking-top {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

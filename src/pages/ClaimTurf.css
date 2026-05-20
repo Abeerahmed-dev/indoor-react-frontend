@@ -1,0 +1,415 @@
+.ct-wrapper {
+  background: var(--bg-dark);
+  min-height: calc(100vh - 73px);
+  color: var(--text-primary);
+  padding: 40px 0;
+}
+
+.ct-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.ct-back-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid var(--border-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--gold-primary);
+  transition: all 0.2s;
+  margin-right: 16px;
+}
+
+.ct-back-btn:hover {
+  background: var(--gold-primary);
+  color: #111;
+}
+
+.ct-header-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--gold-light);
+}
+
+.ct-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ct-hero-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid var(--border-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: var(--gold-primary);
+}
+
+.ct-hero-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  color: var(--gold-light);
+  margin-bottom: 12px;
+}
+
+.ct-hero-desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Form Cards */
+.ct-card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border-subtle);
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ct-step-badge {
+  position: absolute;
+  top: -12px;
+  left: 32px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+.ct-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+  padding-top: 8px;
+}
+
+.ct-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+/* Fields */
+.ct-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.ct-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ct-field input,
+.ct-field select {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--text-primary);
+  outline: none;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.ct-field input:focus,
+.ct-field select:focus {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.ct-field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Pitch Cards */
+.ct-pitch-card {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.ct-pitch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ct-pitch-num {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ct-pitch-remove {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ct-pitch-remove:hover {
+  background: #ef4444;
+  color: #fff;
+}
+
+.ct-add-pitch-btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(212, 175, 55, 0.05);
+  border: 1px dashed var(--gold-primary);
+  color: var(--gold-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  transition: all 0.3s;
+}
+
+.ct-add-pitch-btn:hover {
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--gold-light);
+}
+
+/* Dropdown */
+.ct-dropdown-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.ct-dropdown-btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text-primary);
+  transition: all 0.2s;
+}
+
+.ct-dropdown-btn:hover {
+  border-color: var(--gold-primary);
+}
+
+.ct-selected-venue {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 4px;
+}
+
+.ct-venue-name {
+  font-weight: 600;
+  color: var(--gold-light);
+}
+
+.ct-venue-addr {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ct-dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  margin-top: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  z-index: 50;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.ct-dropdown-item {
+  padding: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.2s;
+}
+
+.ct-dropdown-item:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.ct-dropdown-item.active {
+  background: var(--gold-primary);
+  color: #111;
+}
+
+.ct-dropdown-item.active .ct-item-addr {
+  color: #333;
+}
+
+.ct-item-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.ct-item-addr {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* Upload Area */
+.ct-upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--border-gold);
+  border-radius: 16px;
+  padding: 40px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.ct-upload-area:hover {
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.ct-upload-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.ct-upload-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gold-light);
+}
+
+.ct-upload-hint {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.ct-file-selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.ct-file-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gold-light);
+}
+
+.ct-file-change {
+  font-size: 0.9rem;
+  color: var(--gold-primary);
+  text-decoration: underline;
+}
+
+/* Submit */
+.ct-submit-card {
+  text-align: center;
+}
+
+.ct-submit-btn {
+  width: 100%;
+  padding: 18px;
+  border-radius: 12px;
+  background: var(--gold-gradient);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ct-submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.ct-msg {
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.ct-msg.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.ct-msg.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}

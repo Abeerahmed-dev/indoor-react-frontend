@@ -1,0 +1,23 @@
+.al-wrapper {
+  background: var(--bg-dark);
+  min-height: calc(100vh - 73px);
+  color: var(--text-primary);
+  padding: 40px 0;
+  font-family: var(--font-sans);
+}
+
+.admin-top-nav {
+  background: #0f0f15; /* slightly darker for admin */
+  border-bottom: 1px solid var(--border-gold);
+}
+
+.admin-top-nav .nav-item.active {
+  color: var(--gold-primary);
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.al-content {
+  width: 100%;
+}
+
+/* We don't need any bottom tabs or sidebar css anymore since we moved to top-nav */
